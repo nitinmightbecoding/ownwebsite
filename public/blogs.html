@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="i sell imperfection here">
+    <title>Home | nitinmightbecoding.com</title>
+    <link rel="icon" href="media/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 h-screen">
+
+      <nav class="p-3 lg:p-0 flex justify-between">
+        <div class="flex gap-2 items-center  text-white lg:font-bold lg:px-20 lg:py-12 lg:justify-start lg:h-36 lg:pt-9 lg:space-x-5">
+          <a class="hover:bg-gray-500/15" href="index.html"><img class="object-cover max-w-12 max-h-12" src="media/logo.png" alt="logo"></a>
+          <a class="md:pt-4 group md:hover:text-red-800 md:transition-all md:duration-300 md:ease-in-out" href="index.html"><span class="text-xl lg:text-2xl font-bold md:bg-left-bottom md:bg-gradient-to-r md:from-white md:to-white md:bg-[length:0%_2px] md:bg-no-repeat md:group-hover:bg-[length:100%_2px] md:transition-all md:duration-500 md:ease-out">nitinmightbecoding.com</span>
+        </a>
+      </div>
+
+        <div class="hidden md:flex lg:text-lg md:text-white md:font-bold lg:px-20 lg:py-14 lg:space-x-8 lg:justify-end">
+          <a class="pl-2 pr-2 cursor-pointer hover:bg-gray-200 hover:bg-opacity-40 hover:underline hover:decoration-black hover:text-red-800 duration-200" href="index.html">Home</a>
+          <a class="pl-2 pr-2 cursor-pointer hover:bg-gray-200 hover:bg-opacity-40 hover:underline hover:decoration-black hover:text-red-800 duration-200" href="projects.html">Projects</a>
+          <a class="pl-2 pr-2 cursor-pointer hover:bg-gray-200 hover:bg-opacity-40 hover:underline hover:decoration-black hover:text-red-800 duration-200" href="blogs.html">Blogs</a>
+          <a class="pl-2 pr-2 cursor-pointer hover:bg-gray-200 hover:bg-opacity-40 hover:underline hover:decoration-black hover:text-red-800 duration-200" href="about.html">About</a>
+        </div>
+
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+          <img class="text-gray-600 max-h-7 max-w-7" src="media/menu.png" alt="menu">
+        </button>
+
+
+        <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-slate-950 inset-0 p-3">
+          <div class="flex justify-end">
+            
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+              <img class="text-gray-600 max-h-7 max-w-7" src="media/close.png" alt="close">
+            </button>
+          </div>
+          <div class="mt-3">
+            <a class="mt-40 m-3 p-3 block text-center text-white font-bold" href="index.html">Home</a>
+            <a class="m-3 p-3 block text-center text-white font-bold" href="projects.html">Projects</a>
+            <a class="m-3 p-3 block text-center text-white font-bold" href="blogs.html">Blogs</a>
+            <a class="m-3 p-3 block text-center text-white font-bold" href="about.html">About</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="ml-7 mr-7 lg:ml-32 lg:mr-32 pt-5">
+
+        <h2 class="text-5xl font-sans font-bold text-red-800 pt-5 border-b pb-5 flex justify-center">Blog entries</h2>
+        <div class="block text-center">
+        <h1 class="text-4xl md:text-7xl font-sans font-bold text-red-800 pt-32">NO BLOGS POSTED YET</h1>
+        <p class="text-lg md:text-2xl font-sans font-bold text-gray-300 pt-5">Blogs will be posted soon till then stay tuned!</p>
+        </div>
+
+      </section>
+   
+  </body>
+  <script src="myscript.js"></script>
+</html>
